@@ -6,15 +6,6 @@
  */
 ( function() {
 
-  const consola = (value) => {
-    console.log('ES6', value);
-    return;
-  }
-  let times = ['one', 'two'];
-  for (const time of times) {
-    consola(time);
-  }
-
 	const siteNavigation = document.getElementById( 'site-navigation' );
 
 	// Return early if the navigation don't exist.

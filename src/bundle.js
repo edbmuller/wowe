@@ -175,18 +175,6 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
  * navigation support for dropdown menus.
  */
 (function () {
-  var consola = function consola(value) {
-    console.log('ES6', value);
-    return;
-  };
-
-  var times = ['one', 'two'];
-
-  for (var _i = 0, _times = times; _i < _times.length; _i++) {
-    var time = _times[_i];
-    consola(time);
-  }
-
   var siteNavigation = document.getElementById('site-navigation'); // Return early if the navigation don't exist.
 
   if (!siteNavigation) {

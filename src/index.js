@@ -1,2 +1,2 @@
-import './js/customizer.js'
-import './js/navigation.js'
+import './js/customizer.js';
+import './js/navigation.js';
