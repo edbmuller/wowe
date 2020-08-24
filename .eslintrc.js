@@ -6,6 +6,7 @@ module.exports = {
 		'es2020': true
 	},
 	'extends': [
+		// 	Preset of configurations, see docs for more info
 		'eslint:recommended',
 		'plugin:import/errors',
 		'plugin:import/warnings',
