@@ -1,4 +1,4 @@
-# wowe - wordpress starter kit with webpack
+# WordPress starter theme with Webpack
 
 ## Features
 * ...
