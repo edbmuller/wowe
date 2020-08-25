@@ -34,4 +34,9 @@ body h1 {
   width: auto;
 }
 
+div img {
+  height: 100px;
+  margin: 0 10px;
+}
+
 /*# sourceMappingURL=style.css.map*/

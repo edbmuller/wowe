@@ -43,9 +43,38 @@ module.exports = {
 				use: [
 					{
 						loader: 'file-loader',
+						options: {
+							name: '[name].[ext]',
+							outputPath: 'images/',
+							useRelativePath: true,
+						}
 					},
-				]
-			}
+					{
+						loader: 'image-webpack-loader',
+						options: {
+							mozjpeg: {
+								progressive: true,
+								quality: 70,
+							},
+							optipng: {
+								enabled: true
+							},
+							pngquant: {
+								quality: [0.6, 0.9],
+								// A speed higher thant 4 decrease quality
+								speed: 4,
+							},
+							gifsicle: {
+								interlaced: true,
+								optimizationLevel: 2,
+							},
+							webp: {
+								quality: 75,
+							},
+						},
+					},
+				],
+			},
 		],
 	},
 	plugins: [

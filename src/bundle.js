@@ -86,6 +86,45 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/img-originals/coding.gif":
+/*!**************************************!*\
+  !*** ./src/img-originals/coding.gif ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "images/coding.gif");
+
+/***/ }),
+
+/***/ "./src/img-originals/liveA360.jpg":
+/*!****************************************!*\
+  !*** ./src/img-originals/liveA360.jpg ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "images/liveA360.jpg");
+
+/***/ }),
+
+/***/ "./src/img-originals/logo.png":
+/*!************************************!*\
+  !*** ./src/img-originals/logo.png ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "images/logo.png");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -99,8 +138,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_main_scss__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _svg_spotify_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./svg/spotify.svg */ "./src/svg/spotify.svg");
 /* harmony import */ var _svg_us_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./svg/us.svg */ "./src/svg/us.svg");
+/* harmony import */ var _img_originals_logo_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./img-originals/logo.png */ "./src/img-originals/logo.png");
+/* harmony import */ var _img_originals_coding_gif__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./img-originals/coding.gif */ "./src/img-originals/coding.gif");
+/* harmony import */ var _img_originals_liveA360_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./img-originals/liveA360.jpg */ "./src/img-originals/liveA360.jpg");
 // import './js/customizer.js';
 // import './js/navigat/ion.js';
+
+
+
 
 
 
@@ -130,7 +175,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
       id: "spotify-usage",
       viewBox: "0 0 125 40",
-      url: __webpack_require__.p + "./svg/svg.sprite.svg#spotify-usage",
+      url: __webpack_require__.p + "./images/svg.sprite.svg#spotify-usage",
       toString: function () {
         return this.url;
       }
@@ -150,7 +195,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
       id: "us-usage",
       viewBox: "0 0 473.677 473.677",
-      url: __webpack_require__.p + "./svg/svg.sprite.svg#us-usage",
+      url: __webpack_require__.p + "./images/svg.sprite.svg#us-usage",
       toString: function () {
         return this.url;
       }
