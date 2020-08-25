@@ -7,7 +7,9 @@
 - [ ] .md Description
 - [ ] .md List of features and description
 - [ ] .md Get Started
-- [ ] .md Little doc on how to use stuff (e.g. SVG sprites)
+- [ ] .md Little doc on how to use stuff (e.g. [SVG sprites](https://css-tricks.com/svg-sprites-use-better-icon-fonts/))
+- [ ] Fonts in css trow an error, config a [font-loader](https://chriscourses.com/blog/loading-fonts-webpack)
+- [ ] Autoprefixe with postCSS
 - [ ] Image compression
 - [ ] gzip compression
 - [ ] Bundle name with hash (for caching)

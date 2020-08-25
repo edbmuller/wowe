@@ -97,15 +97,13 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/main.scss */ "./src/scss/main.scss");
 /* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_main_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _svg_spotify_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./svg/spotify.svg */ "./src/svg/spotify.svg");
+/* harmony import */ var _svg_us_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./svg/us.svg */ "./src/svg/us.svg");
 // import './js/customizer.js';
 // import './js/navigat/ion.js';
 
-/*
-	TODO:
-	- Image compression
-	- gzip compression
-	-
-*/
+
+
 
 /***/ }),
 
@@ -117,6 +115,46 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ "./src/svg/spotify.svg":
+/*!*****************************!*\
+  !*** ./src/svg/spotify.svg ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "spotify-usage",
+      viewBox: "0 0 125 40",
+      url: __webpack_require__.p + "./svg/svg.sprite.svg#spotify-usage",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ "./src/svg/us.svg":
+/*!************************!*\
+  !*** ./src/svg/us.svg ***!
+  \************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "us-usage",
+      viewBox: "0 0 473.677 473.677",
+      url: __webpack_require__.p + "./svg/svg.sprite.svg#us-usage",
+      toString: function () {
+        return this.url;
+      }
+    });
 
 /***/ })
 

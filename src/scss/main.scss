@@ -18,3 +18,20 @@ body {
 		background: #f00;
 	}
 }
+
+.d-flex {
+	display: flex;
+	align-items: center;
+}
+
+.icon {
+	margin: 0 10px;
+	width: 90px;
+	height: auto;
+
+}
+
+.spotify {
+	height: 100px;
+	width: auto;
+}

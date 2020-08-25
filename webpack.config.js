@@ -3,7 +3,8 @@ const path = require('path'),
 	UglifyJSPlugin = require('uglifyjs-webpack-plugin'),
 	OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin'),
 	BrowserSyncPlugin = require('browser-sync-webpack-plugin'),
-	StylelintPlugin = require('stylelint-webpack-plugin');
+	StylelintPlugin = require('stylelint-webpack-plugin'),
+	SvgSpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 
 module.exports = {
 	context: __dirname,
@@ -28,6 +29,15 @@ module.exports = {
 					'sass-loader',	// step 1: Convert scss into css
 				],
 			},
+			{
+				test: /\.svg$/,
+				loader: 'svg-sprite-loader',
+				options: {
+					// The loader transforms required images into SVG symbols, more info https://www.npmjs.com/package/svg-sprite-loader#extract-configuration
+					extract: true,
+					spriteFilename: './svg/svg.sprite.svg'
+				}
+			}
 		],
 	},
 	plugins: [
@@ -36,6 +46,7 @@ module.exports = {
 			emitWarnings: true,
 		}),
 		new MiniCssExtractPlugin({ filename: '../style.css' }),
+		new SvgSpriteLoaderPlugin(),
 		new BrowserSyncPlugin({
 			files: '**/*.php',
 			proxy: 'http://localhost/wowe/public/'

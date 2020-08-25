@@ -10,6 +10,14 @@
 	<?php
 			echo "<h1>Hello World!</h1>"
 	?>
+	<div class="d-flex">
+		<svg class="icon">
+			<use xlink:href="./wp-content/themes/wowe/src/svg/svg.sprite.svg#us-usage" />
+		</svg>
+		<svg class="icon spotify">
+			<use xlink:href="./wp-content/themes/wowe/src/svg/svg.sprite.svg#spotify-usage" />
+		</svg>
+	</div>
 	<script src="./wp-content/themes/wowe/src/bundle.js"></script>
 </body>
 </html>
