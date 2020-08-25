@@ -12,11 +12,12 @@
 	?>
 	<div class="d-flex">
 		<svg class="icon">
-			<use xlink:href="./wp-content/themes/wowe/src/svg/svg.sprite.svg#us-usage" />
+			<use xlink:href="./wp-content/themes/wowe/src/images/svg.sprite.svg#us-usage" />
 		</svg>
 		<svg class="icon spotify">
-			<use xlink:href="./wp-content/themes/wowe/src/svg/svg.sprite.svg#spotify-usage" />
+			<use xlink:href="./wp-content/themes/wowe/src/images/svg.sprite.svg#spotify-usage" />
 		</svg>
+		<img src="./wp-content/themes/wowe/src/images/logo.png" alt="Client logo">
 	</div>
 	<script src="./wp-content/themes/wowe/src/bundle.js"></script>
 </body>
