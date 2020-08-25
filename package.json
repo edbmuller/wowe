@@ -5,7 +5,7 @@
   "main": "index.php",
   "scripts": {
     "start": "npm-run-all --parallel eslint dev",
-    "dev": "webpack",
+    "dev": "webpack --watch",
     "build": "webpack --mode=production",
     "eslint": "esw --watch \"src/**/*.{js,jsx}\" --color",
     "eslint:fix": "eslint \"src/**/*.{js,jsx}\" --quiet --fix",
@@ -35,6 +35,8 @@
     "autoprefixer": "^9.8.6",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
+    "browser-sync": "^2.26.12",
+    "browser-sync-webpack-plugin": "^2.2.2",
     "css-loader": "^4.2.1",
     "css-mqpacker": "^7.0.0",
     "eslint": "^7.7.0",

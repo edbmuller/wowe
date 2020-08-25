@@ -1,7 +1,8 @@
 const path = require('path'),
 	MiniCssExtractPlugin = require('mini-css-extract-plugin'),
 	UglifyJSPlugin = require('uglifyjs-webpack-plugin'),
-	OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+	OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin'),
+	BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {
 	context: __dirname,
@@ -30,6 +31,10 @@ module.exports = {
 	},
 	plugins: [
 		new MiniCssExtractPlugin({ filename: '../style.css' }),
+		new BrowserSyncPlugin({
+			files: '**/*.php',
+			proxy: 'http://localhost/wowe/public/'
+		}),
 	],
 	optimization: {
 		minimizer: [new UglifyJSPlugin(), new OptimizeCssAssetsPlugin()],
