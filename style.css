@@ -12,10 +12,10 @@ Text Domain: wowe
 Tags: wowe, wordpress, webpack
 */
 body {
-  background: tomato;
+  background: #ff6347;
 }
 body h1 {
-  background: red;
+  background: #f00;
 }
 
 /*# sourceMappingURL=style.css.map*/

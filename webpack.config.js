@@ -2,7 +2,8 @@ const path = require('path'),
 	MiniCssExtractPlugin = require('mini-css-extract-plugin'),
 	UglifyJSPlugin = require('uglifyjs-webpack-plugin'),
 	OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin'),
-	BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+	BrowserSyncPlugin = require('browser-sync-webpack-plugin'),
+	StylelintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
 	context: __dirname,
@@ -30,6 +31,10 @@ module.exports = {
 		],
 	},
 	plugins: [
+		new StylelintPlugin({
+			emitError: true,
+			emitWarnings: true,
+		}),
 		new MiniCssExtractPlugin({ filename: '../style.css' }),
 		new BrowserSyncPlugin({
 			files: '**/*.php',
