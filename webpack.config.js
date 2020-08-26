@@ -1,9 +1,10 @@
 const path = require('path'),
-	MiniCssExtractPlugin = require('mini-css-extract-plugin'),
 	UglifyJSPlugin = require('uglifyjs-webpack-plugin'),
-	OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin'),
-	BrowserSyncPlugin = require('browser-sync-webpack-plugin'),
+	MiniCssExtractPlugin = require('mini-css-extract-plugin'),
 	StylelintPlugin = require('stylelint-webpack-plugin'),
+	OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin'),
+	Autoprefixer = require('autoprefixer'),
+	BrowserSyncPlugin = require('browser-sync-webpack-plugin'),
 	SvgSpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 
 module.exports = {
@@ -27,6 +28,12 @@ module.exports = {
 					MiniCssExtractPlugin.loader,	// step3: Inject a style element into the DOM
 					'css-loader',	// step 2: Turns css into a js string into bundle.js
 					'sass-loader',	// step 1: Convert scss into css
+					{
+						loader: 'postcss-loader',
+						options: {
+							plugins: [ Autoprefixer()],
+						},
+					},
 				],
 			},
 			{
@@ -83,6 +90,12 @@ module.exports = {
 			emitWarnings: true,
 		}),
 		new MiniCssExtractPlugin({ filename: '../style.css' }),
+		new OptimizeCssAssetsPlugin({
+			cssProcessorOptions: {
+				map: {inline: false, annotation: true},
+				discardComments: false,
+			},
+		}),
 		new SvgSpriteLoaderPlugin(),
 		new BrowserSyncPlugin({
 			files: '**/*.php',
@@ -90,6 +103,6 @@ module.exports = {
 		}),
 	],
 	optimization: {
-		minimizer: [new UglifyJSPlugin(), new OptimizeCssAssetsPlugin()],
+		minimizer: [new UglifyJSPlugin()],
 	},
 };

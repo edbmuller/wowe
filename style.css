@@ -10,33 +10,5 @@ Requires PHP: 5.6
 License: MIT
 Text Domain: wowe
 Tags: wowe, wordpress, webpack
-*/
-body {
-  background: #ff6347;
-}
-body h1 {
-  background: #f00;
-}
-
-.d-flex {
-  display: flex;
-  align-items: center;
-}
-
-.icon {
-  margin: 0 10px;
-  width: 90px;
-  height: auto;
-}
-
-.spotify {
-  height: 100px;
-  width: auto;
-}
-
-div img {
-  height: 100px;
-  margin: 0 10px;
-}
-
-/*# sourceMappingURL=style.css.map*/
+*/body{background:tomato}body h1{background:red}.d-flex{display:flex;align-items:center}.autoprefixer-test{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.icon{margin:0 10px;width:90px;height:auto}.spotify{height:100px;width:auto}div img{height:100px;margin:0 10px}
+/*# sourceMappingURL=style.css.map */
