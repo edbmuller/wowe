@@ -1,18 +1,11 @@
-/*!
-Theme Name: wowe
-Theme URI: https://wowe.edubonamigo.com/
-Author: Eduardo Bonamigo
-Author URI: https://edubonamigo.com/
-Description: Wordpress starter kit using webpack
-Version: 1.0.0
-Tested up to: 5.5
-Requires PHP: 5.6
-License: MIT
-Text Domain: wowe
-Tags: wowe, wordpress, webpack
-*/
+@font-face {
+	font-family: "DIN Regular";
+	src: url(../fonts/DINNextCYR-Regular.otf) format("truetype");
+}
+
 body {
 	background: #ff6347;
+	font-family: "DIN Regular", sans-serif;
 
 	h1 {
 		background: #f00;
@@ -22,10 +15,6 @@ body {
 .d-flex {
 	display: flex;
 	align-items: center;
-}
-
-.autoprefixer-test {
-	user-select: none;
 }
 
 .icon {

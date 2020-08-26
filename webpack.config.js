@@ -20,10 +20,12 @@ module.exports = {
 		rules: [
 			{
 				test: /\.jsx?$/,
+				exclude: /node_modules/,
 				loader: 'babel-loader',
 			},
 			{
 				test: /\.scss$/,
+				exclude: /node_modules/,
 				use: [
 					MiniCssExtractPlugin.loader,	// step3: Inject a style element into the DOM
 					'css-loader',	// step 2: Turns css into a js string into bundle.js
@@ -37,7 +39,21 @@ module.exports = {
 				],
 			},
 			{
+				test: /\.(jpg|woff|woff2|eot|otf|ttf)(\?.*$|$)?/,
+				exclude: /node_modules/,
+				use: [
+					{
+						loader: 'file-loader',
+						options: {
+							name: '[name].[ext]',
+							outputPath: 'fonts/',
+						},
+					},
+				],
+			},
+			{
 				test: /\.svg$/,
+				exclude: /node_modules/,
 				loader: 'svg-sprite-loader',
 				options: {
 					// The loader transforms required images into SVG symbols, more info https://www.npmjs.com/package/svg-sprite-loader#extract-configuration
@@ -47,6 +63,7 @@ module.exports = {
 			},
 			{
 				test: /\.(png|jpe?g|gif)$/i,
+				exclude: /node_modules/,
 				use: [
 					{
 						loader: 'file-loader',
@@ -89,7 +106,7 @@ module.exports = {
 			emitError: true,
 			emitWarnings: true,
 		}),
-		new MiniCssExtractPlugin({ filename: '../style.css' }),
+		new MiniCssExtractPlugin({ filename: './style.css' }),
 		new OptimizeCssAssetsPlugin({
 			cssProcessorOptions: {
 				map: {inline: false, annotation: true},
