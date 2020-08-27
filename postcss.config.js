@@ -1,5 +1,8 @@
 module.exports = {
 	plugins: {
-		'autoprefixer': {}
+		'autoprefixer': {},
+		preset: ['default', {
+			discardComments: { removeAll: true }
+		}]
 	}
 };

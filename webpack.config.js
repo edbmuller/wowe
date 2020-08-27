@@ -9,13 +9,13 @@ const path = require('path'),
 
 module.exports = {
 	context: __dirname,
-	entry: './src/index.js',
+	entry: './src/js/index.js',
 	output: {
 		path: path.resolve(__dirname, 'src'),
 		filename: 'bundle.js',
 	},
 	mode: 'development',
-	devtool: 'cheap-module-source-map',
+	devtool: 'source-map',
 	module: {
 		rules: [
 			{
@@ -78,7 +78,7 @@ module.exports = {
 						options: {
 							mozjpeg: {
 								progressive: true,
-								quality: 70,
+								quality: 80,
 							},
 							optipng: {
 								enabled: true
@@ -93,7 +93,7 @@ module.exports = {
 								optimizationLevel: 2,
 							},
 							webp: {
-								quality: 75,
+								quality: 80,
 							},
 						},
 					},

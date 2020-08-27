@@ -21,6 +21,14 @@
 		<img src="./wp-content/themes/wowe/src/images/logo.png" alt="Client logo">
 		<img src="./wp-content/themes/wowe/src/images/coding.gif" alt="Client logo">
 	</div>
+	<?php
+		/* Start the Loop */
+		while ( have_posts() ) :
+			the_post();
+			the_content();
+		endwhile;
+
+	?>
 	<img src="./wp-content/themes/wowe/src/images/liveA360.jpg" style="width: 100%;" alt="Client logo">
 	<script src="./wp-content/themes/wowe/src/bundle.js"></script>
 </body>
