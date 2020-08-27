@@ -4,9 +4,8 @@
   "description": "Wordpress starter kit using Webpack 4",
   "main": "index.php",
   "scripts": {
-    "start": "npm-run-all --parallel eslint dev",
-    "dev": "webpack --watch",
-    "build": "webpack --mode=production",
+    "start": "npm-run-all --parallel eslint webpack --watch",
+    "build": "npm-run-all --parallel eslint webpack --mode=production",
     "eslint": "esw --watch \"src/**/*.{js,jsx}\" --color",
     "eslint:fix": "eslint \"src/**/*.{js,jsx}\" --quiet --fix",
     "format": "prettier --write \"src/**/_.{js,jsx,scss}\"",
