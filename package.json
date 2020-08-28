@@ -4,10 +4,13 @@
   "description": "Wordpress starter kit using Webpack 4",
   "main": "index.php",
   "scripts": {
-    "start": "npm-run-all --parallel eslint webpack --watch",
+    "start": "npm-run-all --parallel eslint:watch compileDev",
+    "compileDev": "webpack --config webpack.config.js --watch",
     "build": "npm-run-all --parallel eslint webpack --mode=production",
-    "eslint": "esw --watch \"src/**/*.{js,jsx}\" --color",
-    "eslint:fix": "eslint \"src/**/*.{js,jsx}\" --quiet --fix",
+    "eslint": "eslint \"src/**/*.{js,jsx}\" --color",
+    "eslint:watch": "esw --watch \"src/**/*.{js,jsx}\" --color",
+		"eslint:fix": "eslint \"src/**/*.{js,jsx}\" --quiet --fix",
+
     "format": "prettier --write \"src/**/_.{js,jsx,scss}\"",
     "stylelint": "stylelint \"src/**/*.{css,scss}\"",
     "stylelint:fix": "stylelint \"src/**/*.{js,jsx}\" --fix",
@@ -70,7 +73,8 @@
     "svgo-loader": "^2.2.1",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
     "@babel/polyfill": "^7.10.4"
