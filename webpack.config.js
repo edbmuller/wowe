@@ -106,7 +106,7 @@ module.exports = {
 			emitError: true,
 			emitWarnings: true,
 		}),
-		new MiniCssExtractPlugin({ filename: './style.css' }),
+		new MiniCssExtractPlugin({ filename: './style.min.css' }),
 		new OptimizeCssAssetsPlugin({
 			cssProcessorOptions: {
 				map: {inline: false, annotation: true},
