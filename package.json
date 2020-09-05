@@ -6,15 +6,14 @@
   "scripts": {
     "start": "npm-run-all --parallel eslint:watch compileDev",
     "compileDev": "webpack --config webpack.config.js --watch",
-    "build": "npm-run-all --parallel eslint webpack --mode=production",
-    "eslint": "eslint \"src/**/*.{js,jsx}\" --color",
+    "prebuild": "eslint \"src/**/*.{js,jsx}\" --color",
+    "build": "webpack --config webpack.config.js --mode=production",
     "eslint:watch": "esw --watch \"src/**/*.{js,jsx}\" --color",
-		"eslint:fix": "eslint \"src/**/*.{js,jsx}\" --quiet --fix",
-
+    "eslint:fix": "eslint \"src/**/*.{js,jsx}\" --quiet --fix",
     "format": "prettier --write \"src/**/_.{js,jsx,scss}\"",
     "stylelint": "stylelint \"src/**/*.{css,scss}\"",
     "stylelint:fix": "stylelint \"src/**/*.{js,jsx}\" --fix",
-    "wp-pot": "wp-pot --src '_.php' --dest-file 'languages/wowe.pot' --domain 'wowe'"
+    "wp-pot": "wp-pot --src '_.php' --dest-file 'languages/tlscp.pot' --domain 'tlscp'"
   },
   "repository": {
     "type": "git",
