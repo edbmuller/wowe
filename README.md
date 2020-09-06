@@ -9,7 +9,7 @@
 ## Features
 - <a href="#Features">JS minified bundle (critical and defered)</a>
 - <a href="#Features">Babel transpiler with map</a>
-- <a href="#Features">CSS minified bundle (critical and defered)</a>
+- <a href="#Features">CSS minified bundle</a>
 - <a href="#Features">Sass compiler with map</a>
 - <a href="#Features">Stylelint</a>
 - <a href="#Features">Font loader</a>
@@ -28,6 +28,7 @@
 - [ ] .md Usage: doc on how to use stuff (e.g. [SVG sprites](https://css-tricks.com/svg-sprites-use-better-icon-fonts/) + more info for [extract](https://www.npmjs.com/package/svg-sprite-loader#extract-configuration))
 - [ ] Implement wp-dev-server
 - [ ] test babel polyfill
+- [ ] Split CSS output to serve critical and defered styles
 - [ ] Fix Autoprefixe
 	-	[ ] Compress the same image in 2 ways, one in a good quality and another in a very low quality, to implement progressive image loading. [Reference](https://jmperezperez.com/medium-image-progressive-loading-placeholder/)
 - [ ] Code spliting to deliver critical CSS/JS and defer the rest

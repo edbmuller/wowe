@@ -6,6 +6,7 @@
 	<title>wowe</title>
 	<link rel="stylesheet" href="./wp-content/themes/wowe/style.css">
 	<link rel="stylesheet" href="./wp-content/themes/wowe/dist/css/style.min.css">
+	<script src="./wp-content/themes/wowe/dist/js/critical.js"></script>
 </head>
 <body>
 	<?php
@@ -30,6 +31,6 @@
 
 	?>
 	<img src="./wp-content/themes/wowe/dist/images/liveA360.jpg" style="width: 100%;" alt="Client logo">
-	<script src="./wp-content/themes/wowe/dist/js/index.js"></script>
+	<script src="./wp-content/themes/wowe/dist/js/main.js"></script>
 </body>
 </html>

@@ -41,7 +41,7 @@ module.exports = {
 				],
 			},
 			{
-				test: /\.(jpg|woff|woff2|eot|otf|ttf)(\?.*$|$)?/,
+				test: /\.(woff|woff2|eot|otf|ttf)(\?.*$|$)?/,
 				exclude: /node_modules/,
 				use: [
 					{
