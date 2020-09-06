@@ -1,5 +1,7 @@
 # wowe - starter theme for [wordpress](https://webpack.js.org/) using [webpack](https://webpack.js.org/) 
+
 > Initial enviroment configuration designed to have the best pratices.
+
 <a href="#features">Features</a> |
 <a href="#install">Install</a> |
 <a href="#usage">Usage</a> |
@@ -19,6 +21,8 @@
 
 ## Install
 ...
+
+## Usage
 
 ## Todos
 - [ ] .md List of features and description
