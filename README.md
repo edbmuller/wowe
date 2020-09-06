@@ -9,7 +9,7 @@
 ## Features
 - <a href="#Features">JS minified bundle (critical and defered)</a>
 - <a href="#Features">Babel transpiler with map</a>
-- <a href="#Features">CSS minified bundle (Critical and defered)</a>
+- <a href="#Features">CSS minified bundle (critical and defered)</a>
 - <a href="#Features">Sass compiler with map</a>
 - <a href="#Features">Stylelint</a>
 - <a href="#Features">Font loader</a>

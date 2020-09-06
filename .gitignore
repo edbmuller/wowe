@@ -5,3 +5,5 @@ src/style.min.css.map
 
 src/bundle.js
 src/bundle.js.map
+
+dist/
