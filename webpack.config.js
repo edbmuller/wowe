@@ -4,7 +4,6 @@ const path = require('path'),
 	StylelintPlugin = require('stylelint-webpack-plugin'),
 	OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin'),
 	Autoprefixer = require('autoprefixer'),
-	BrowserSyncPlugin = require('browser-sync-webpack-plugin'),
 	SvgSpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 
 module.exports = {
@@ -114,10 +113,6 @@ module.exports = {
 			},
 		}),
 		new SvgSpriteLoaderPlugin(),
-		new BrowserSyncPlugin({
-			files: '**/*.php',
-			proxy: 'http://localhost/wowe/public/'
-		}),
 	],
 	optimization: {
 		minimizer: [new UglifyJSPlugin()],
