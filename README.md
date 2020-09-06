@@ -17,7 +17,9 @@
 - <a href="#Features">SVG sprite loader</a>
 
 ## Install
-...
+- install editorconfig
+- install rimraf globaly
+- npm install
 
 ## Usage
 

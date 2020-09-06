@@ -8,10 +8,13 @@ const path = require('path'),
 
 module.exports = {
 	context: __dirname,
-	entry: './src/js/index.js',
+	entry: {
+		critical: path.resolve(__dirname, './src/js/critical.js'),
+		main: path.resolve(__dirname, './src/js/index.js')
+	},
 	output: {
-		path: path.resolve(__dirname, 'dist'),
-		filename: 'bundle.js',
+		path: path.resolve(__dirname, 'dist/'),
+		filename: './js/[name].js',
 	},
 	mode: 'development',
 	devtool: 'source-map',
@@ -105,7 +108,7 @@ module.exports = {
 			emitError: true,
 			emitWarnings: true,
 		}),
-		new MiniCssExtractPlugin({ filename: './style.min.css' }),
+		new MiniCssExtractPlugin({ filename: './css/style.min.css' }),
 		new OptimizeCssAssetsPlugin({
 			cssProcessorOptions: {
 				map: {inline: false, annotation: true},
