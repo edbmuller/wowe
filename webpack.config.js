@@ -88,7 +88,7 @@ module.exports = {
 								speed: 4,
 							},
 							gifsicle: {
-								interlaced: true,
+								interlaced: false,
 								optimizationLevel: 2,
 							},
 							webp: {
