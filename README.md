@@ -34,3 +34,4 @@
 - [ ] Code spliting to deliver critical CSS/JS and defer the rest
 - [ ] Bundle name (css/js) with hash (for caching) on build mode
 	- [ ] Use pot files to store the hashed, to later read the names and includ dinamically on the functions.php of wp
+- [ ] Make a demo page at wowe.edubonamigo.com

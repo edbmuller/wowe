@@ -4,7 +4,8 @@ const path = require('path'),
 	StylelintPlugin = require('stylelint-webpack-plugin'),
 	OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin'),
 	Autoprefixer = require('autoprefixer'),
-	SvgSpriteLoaderPlugin = require('svg-sprite-loader/plugin');
+	SvgSpriteLoaderPlugin = require('svg-sprite-loader/plugin'),
+	CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
 	context: __dirname,
@@ -116,6 +117,11 @@ module.exports = {
 			},
 		}),
 		new SvgSpriteLoaderPlugin(),
+		new CopyPlugin({
+			patterns: [
+				{ from: path.resolve(__dirname, 'src/lottie'), to: path.resolve(__dirname, 'dist/lottie') },
+			],
+		}),
 	],
 	optimization: {
 		minimizer: [new UglifyJSPlugin()],
