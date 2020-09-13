@@ -61,7 +61,7 @@ module.exports = {
 				options: {
 					// The loader transforms required images into SVG symbols, more info https://www.npmjs.com/package/svg-sprite-loader#extract-configuration
 					extract: true,
-					spriteFilename: './images/svg.sprite.svg'
+					spriteFilename: './images/sprite.svg'
 				}
 			},
 			{

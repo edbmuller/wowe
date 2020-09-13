@@ -14,10 +14,10 @@
 	?>
 	<div class="d-flex">
 		<svg class="icon">
-			<use xlink:href="./wp-content/themes/wowe/dist/images/svg.sprite.svg#us-usage" />
+			<use xlink:href="./wp-content/themes/wowe/dist/images/sprite.svg#us-usage" />
 		</svg>
 		<svg class="icon spotify">
-			<use xlink:href="./wp-content/themes/wowe/dist/images/svg.sprite.svg#spotify-usage" />
+			<use xlink:href="./wp-content/themes/wowe/dist/images/sprite.svg#spotify-usage" />
 		</svg>
 		<img src="./wp-content/themes/wowe/dist/images/logo.png" alt="Client logo">
 		<img src="./wp-content/themes/wowe/dist/images/coding.gif" alt="Client logo">
